@@ -1,14 +1,15 @@
 /*El del css va en funcion del orden de aparicion del html*/
-body, html{
-    margin:0px;
-    height:100vh;
+body,
+html {
+    margin: 0px;
+    height: 100vh;
 }
 
 /* Panel lateral aside */
 
-aside{
+aside {
     display: flex;
-    float:left;
+    float: left;
     width: 15%;
     height: 100%;
     background-color: rgb(0, 0, 0);
@@ -16,37 +17,49 @@ aside{
     color: white;
 }
 
-.panel-lateral-botones{
+.panel-lateral-botones {
     display: flex;
     width: 100%;
-    height:15%;
+    height: 15%;
     flex-direction: column;
     padding: 5px;
 }
-.panel-lateral-botones-boton{
+
+.panel-lateral-botones-boton {
     display: flex;
     height: 25%;
     width: 95%;
 }
-.panel-lateral-botones-top{
+
+.panel-lateral-botones-top {
     display: flex;
     width: 100%;
-        background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    color:white;
 }
 
-.panel-lateral-historiales{
+.panel-lateral-botones-top:hover {
+    background-color: lightgray;
+}
+
+.panel-lateral-historiales {
     display: flex;
     width: 100%;
-    height:80%;
+    height: 80%;
     flex-direction: column;
     overflow: auto;
     padding-left: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .panel-lateral-historiales::-webkit-scrollbar {
-    width: 12px; /* Ajusta el ancho según tus necesidades */
+    width: 12px;
+    /* Ajusta el ancho según tus necesidades */
 }
+
 .panel-lateral-historiales::-webkit-scrollbar-thumb {
     background-color: darkgray;
 }
@@ -54,121 +67,193 @@ aside{
 .panel-lateral-historiales::-webkit-scrollbar-track {
     background-color: lightgray;
 }
-.chat-dias{
+
+.chat-dias {
     border: none;
 
-    width:100%;
-    margin-bottom:2%;
+    width: 100%;
+    margin-bottom: 2%;
     background-color: rgb(0, 0, 0);
-    color:white;
-    text-align: left;;
+    color: white;
+    text-align: left;
+    ;
 }
-.chat-dias:hover{
+
+.chat-dias:hover {
     background-color: darkgray;
 }
 
-.panel-lateral-user{
+.panel-lateral-user {
     height: 5%;
 }
-.panel-lateral-user-boton{
+
+.panel-lateral-user-boton {
+    display: flex;
+    align-items: center;
+    text-align: left;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+.panel-lateral-user-boton img{
+    height: 70%;
+}
+
+.panel-lateral-user-titulo{
+    width:70%;
 }
 
 /* Chat principal */
 
-main{
+main {
     position: relative;
     display: flex;
-    float:left;
+    float: left;
     width: 85%;
     height: 100%;
     background-color: rgb(73, 73, 73);
     flex-direction: column;
 }
 
-.chat-principal-tipo-chat{
+.chat-principal-tipo-chat {
     display: float;
     height: 75%;
     width: 100%;
 }
 
 /* change */
-.chat-principal-logo{
+.chat-principal-logo {
     position: absolute;
     height: 30%;
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom:35%;
-    left:35%;
+    bottom: 45%;
+    left: 35%;
 }
 
-.chat-principal-sugerencias{
+.chat-principal-logo-imagen {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.chat-principal-logo-imagen img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.chat-principal-logo-texto {
+    color: white;
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chat-principal-sugerencias {
     display: grid;
     padding-right: 20%;
     padding-left: 20%;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas de tamaño igual */
-    grid-template-rows: repeat(2, 45%); /* 2 filas de 100px de altura cada una */
-    gap: 10px; /* Espacio entre los elementos */
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas de tamaño igual */
+    grid-template-rows: repeat(2, 45%);
+    /* 2 filas de 100px de altura cada una */
+    gap: 10px;
+    color: white;
+    /* Espacio entre los elementos */
 }
-.chat-principal-sugerencias-sugerencia{
+
+.chat-principal-sugerencias-sugerencia {
     z-index: 2;
     border-color: black;
     padding-left: 10px;
     padding-top: 5px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+.chat-principal-sugerencias-sugerencia-titulo{
+    font-size: small;
+}
+
+.chat-principal-sugerencias-sugerencia:hover {
+    background-color: #94c8cc;
+    /* Color de fondo grisaceo para visualización */
+}
+
+
+.chat-principal-label {
+    display: flex;
+    margin-top: 20px;
+    background-color: rgb(122, 122, 122);
     border-radius: 20px;
     border: 2px solid #2980b9;
-}
-.chat-principal-sugerencias-sugerencia:hover {
-    background-color: #94c8cc; /* Color de fondo grisaceo para visualización */
+    width: 70%;
+    margin-left:15%;
+    
 }
 
-.chat-principal-label{
-    padding-left: 2%;
-    padding-right:5%;
-    background-color: rgb(122, 122, 122);
-    border-radius: 20px;
-    border:2px solid #2980b9;
-    margin-right:20%;
-    margin-left:20%;
-    margin-top:1%;
+.chat-principal-label-chatbox {
+    flex: 90%;
 }
+
+.chat-principal-label-send {
+    flex: 10%;
+}
+
 .chat-principal-label-input {
-    background-color: rgb(122, 122, 122);
-    margin-top:2%;
-    width: calc(95%);
+    border: none;
+    outline: none;
     resize: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    margin-left: 5%;
+    box-sizing: border-box;
+    overflow: auto;
+
+    background-color: rgb(122, 122, 122);
+    width: 90%;
 }
 
-.chat-principal-label-boton{
-    border-radius: 12px;
-    position: absolute;
-    margin-top: 2%;
-    margin-right: 5px; 
-}
-.icono-send {
-    width: 35px;
-    position: absolute;
-    margin-top: 1%;
-    margin-right: 0px;
-    color: darkgrey;
-    fill: darkgray;
+.chat-principal-label-send{
+    height: 100%;
+
 }
 
-footer{
-    display:flex;
-    margin-top: auto;
-    height:3%;
+.icono-send{
+    height: 40px;
+    fill:rgb(44, 44, 44);
+}
+
+
+
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    margin-top: 10px;
+    height: 3%;
     grid-template-rows: repeat(2, 45%);
     gap: 10px;
-    padding-left: 40%;
+    align-items: center;
+    color:white;
+
 }
 
-.chat-principal-credenciales-info{
-    padding-left: 80%;
+.chat-principal-credenciales-texto {
+    position: absolute;
+    margin-left: 35%;
 }
 
-
+.chat-principal-credenciales-info {
+    position: absolute;
+    margin-left: 95%;
+    text-align: right;
+}

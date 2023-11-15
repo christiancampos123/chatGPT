@@ -2,6 +2,12 @@
 <html lang="es">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+
+
     <meta charset="UTF-8">
 
     <!--Para diseño respònsive-->
@@ -218,7 +224,12 @@
             </ul>
         </section>
         <section class="panel-lateral-user">
-            <button class="panel-lateral-user-boton">Christian</button>
+            <button class="panel-lateral-user-boton">
+                <img src="./img/user.png" alt="imagen de usuario">
+                <div class="panel-lateral-user-titulo">
+                    Christian
+                </div>
+            </button>
         </section>
     </aside>
     <!-- contenido del chat -->
@@ -230,17 +241,17 @@
         <section class="chat-principal-logo">
             <div class="chat-principal-logo-mantener">
                 <div class="chat-principal-logo-imagen">
-                    imagen
+                    <img src="img/chatgpt.webp" alt="logo chat gpt">
                 </div>
                 <div class="chat-principal-logo-texto">
-                    logo
+                    <h1>WELCOME TO CHATGPT</h1>
                 </div>
             </div>
         </section>
         <section class="chat-principal-sugerencias">
             <article class="chat-principal-sugerencias-sugerencia">
                 <div class="chat-principal-sugerencias-sugerencia-titulo">
-                    tit1
+                    <h2>tit4</h2>
                 </div>
                 <div class="chat-principal-sugerencias-sugerencia-texto">
                     text1
@@ -248,7 +259,7 @@
             </article>
             <article class="chat-principal-sugerencias-sugerencia">
                 <div class="chat-principal-sugerencias-sugerencia-titulo">
-                    tit2
+                    <h2>tit4</h2>
                 </div>
                 <div class="chat-principal-sugerencias-sugerencia-texto">
                     text2
@@ -256,7 +267,7 @@
             </article>
             <article class="chat-principal-sugerencias-sugerencia">
                 <div class="chat-principal-sugerencias-sugerencia-titulo">
-                    tit3
+                    <h2>tit4</h2>
                 </div>
                 <div class="chat-principal-sugerencias-sugerencia-texto">
                     text3
@@ -264,7 +275,7 @@
             </article>
             <article class="chat-principal-sugerencias-sugerencia">
                 <div class="chat-principal-sugerencias-sugerencia-titulo">
-                    tit4
+                    <h2>tit4</h2>
                 </div>
                 <div class="chat-principal-sugerencias-sugerencia-texto">
                     text4
@@ -273,25 +284,28 @@
         </section>
         <section>
             <form class="chat-principal-label">
-                <textarea type="text" rows="2" cols="50" class="chat-principal-label-input"
-                    placeholder="Escribe algo..."></textarea>
-                <svg class="icono-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <title>send</title>
-                    <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
-                </svg>
+                <div class="chat-principal-label-chatbox">
+                    <textarea type="text" rows="2" cols="50" class="chat-principal-label-input"
+                        placeholder="Escribe algo..."></textarea>
+                </div>
+                <div class="chat-principal-label-send">
+                    <svg class="icono-send" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <title>send</title>
+                        <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" />
+                    </svg>
+
+                </div>
             </form>
         </section>
         <footer class="chat-principal-credenciales">
             <div class="chat-principal-credenciales-texto">
-                texto
+                Copy right derechos de christian
             </div>
             <div class="chat-principal-credenciales-info">
                 I
             </div>
         </footer>
-
     </main>
-
 </body>
 
 </html>

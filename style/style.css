@@ -46,7 +46,7 @@ aside {
 
 .panel-lateral-historiales {
     display: flex;
-    width: 100%;
+    width: 95%;
     height: 80%;
     flex-direction: column;
     overflow: auto;
@@ -56,16 +56,18 @@ aside {
 }
 
 .panel-lateral-historiales::-webkit-scrollbar {
-    width: 12px;
+    position:relative;
+    width: 4px;
     /* Ajusta el ancho según tus necesidades */
 }
 
 .panel-lateral-historiales::-webkit-scrollbar-thumb {
     background-color: darkgray;
+    border-radius: 5px;
 }
 
 .panel-lateral-historiales::-webkit-scrollbar-track {
-    background-color: lightgray;
+    background-color: black;
 }
 
 .chat-dias {
@@ -126,13 +128,13 @@ main {
 /* change */
 .chat-principal-logo {
     position: absolute;
-    height: 30%;
-    width: 30%;
+    height: 15%;
+    width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
-    bottom: 45%;
-    left: 35%;
+    bottom: 65%;
+    left: 42%;
 }
 
 .chat-principal-logo-imagen {
@@ -152,6 +154,7 @@ main {
     text-align: center;
     padding-top: 5%;
     font-family: 'Roboto', sans-serif;
+    font-size:x-small;
 }
 
 .chat-principal-sugerencias {
@@ -198,7 +201,10 @@ main {
 }
 
 .chat-principal-label-chatbox {
+    display:flex;
     flex: 90%;
+    position: relative;
+    align-items: center;
 }
 
 .chat-principal-label-send {
@@ -220,6 +226,7 @@ main {
 
     background-color: rgb(122, 122, 122);
     width: 90%;
+    height: 20px;
 }
 
 .chat-principal-label-send{
@@ -237,6 +244,7 @@ main {
 
 footer {
     font-family: 'Roboto', sans-serif;
+    font-size: x-small;
     display: flex;
     margin-top: 10px;
     height: 3%;
@@ -249,7 +257,7 @@ footer {
 
 .chat-principal-credenciales-texto {
     position: absolute;
-    margin-left: 35%;
+    margin-left: 42%;
 }
 
 .chat-principal-credenciales-info {
